@@ -25,7 +25,7 @@ def count_clicks(token, bitlink):
   
 if __name__=='__main__':
   link = input("Please, enter your link: ")
-  token = os.getenv("TOKEN")
+  token = os.getenv("BITLY_API_TOKEN")
 
   if link.startswith('bit.ly'):
     try:
