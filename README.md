@@ -12,6 +12,6 @@ Python3 should be already installed. Then use pip to install dependencies:
 If you want to use this script, you should print the next command in your terminal
 
     $python main.py http://google.com
-    Битдинк bit.ly/2Vwus8P
+    Битлинк bit.ly/2Vwus8P
 
 
