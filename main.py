@@ -1,5 +1,15 @@
 import requests
 import os
+import argparse
+from dotenv import load_dotenv
+
+load_dotenv()
+
+def arguments():
+  parser = argparse.ArgumentParser()
+  parser.add_argument('link', help="The link what you want to cut")
+  args = parser.parse_args()
+  return args.link
 
 def get_shorten_link(link, token):
   url = "https://api-ssl.bitly.com/v4/bitlinks"
@@ -24,7 +34,7 @@ def count_clicks(token, bitlink):
   return response.json()
   
 if __name__=='__main__':
-  link = input("Please, enter your link: ")
+  link = arguments()
   token = os.getenv("BITLY_API_TOKEN")
 
   if link.startswith('bit.ly'):
