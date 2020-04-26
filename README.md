@@ -5,11 +5,13 @@ This script makes from usual link a short link in, like bit.ly/xxxxxx
 
 Python3 should be already installed. Then use pip to install dependencies:
 
-'''pip install -r requirements.txt
-
+'''
+pip install -r requirements.txt
+'''
 # How to run
 
 If you want to use this script, you should print the next command in your terminal
-'''python main.py <link>
-
+'''
+python main.py <link>
+'''
 
