@@ -16,5 +16,5 @@ If you want to use this script, you should print the next command in your termin
 
 Necessarily you need ```.env``` where is stored your token for the bit.ly
 In the .env file add the string
-> BITLY_API_TOKEN=<YOUR TOKEN>
+> BITLY_API_TOKEN= YOUR TOKEN
 
