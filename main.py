@@ -3,7 +3,7 @@ import os
 import argparse
 from dotenv import load_dotenv
 
-load_dotenv()
+
 
 def arguments():
   parser = argparse.ArgumentParser()
@@ -34,6 +34,7 @@ def count_clicks(token, bitlink):
   return response.json()
   
 if __name__=='__main__':
+  load_dotenv()
   link = arguments()
   token = os.getenv("BITLY_API_TOKEN")
 
