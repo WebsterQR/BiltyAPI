@@ -4,7 +4,6 @@ import argparse
 from dotenv import load_dotenv
 
 
-
 def arguments():
   parser = argparse.ArgumentParser()
   parser.add_argument('link', help="The link what you want to cut")
